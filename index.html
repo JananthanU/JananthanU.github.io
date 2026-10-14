@@ -297,7 +297,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
     <div class="hero-grid">
       <div class="hero-text">
         <div>
-          <p class="lede">I build machine learning and causal inference pipelines and report the results as measured, including where they fall short.</p>
+          <p class="lede">I build and evaluate machine learning, causal inference, and deep learning models, with a focus on rigorous experimentation, transparent results, and understanding where different approaches fall short.</p>
           <div class="actions">
             <a class="btn btn-primary" href="#projects">See the projects</a>
             <a class="btn btn-plain" href="https://github.com/JananthanU">GitHub profile</a>
@@ -340,8 +340,8 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
         <header class="p-head">
           <p class="p-topic">Causal inference</p>
           <h3>Right heart catheterization and ICU mortality</h3>
-          <p class="p-what">Did a heart catheter on the first day of intensive care raise mortality? A causal ML re-analysis of the SUPPORT study with 5,735 patients, compared with the randomized trials that later found no clear effect.</p>
-          <p class="p-result">After adjusting for 50 day-1 covariates, a catheter goes with 3.5 percentage points higher 30-day mortality (95% CI 1.0 to 6.1), about half the raw difference of 7.4 points.</p>
+          <p class="p-what">What was the estimated effect of right-heart catheterization on 30-day mortality when performed on the first day in the ICU?</p>
+          <p class="p-result">After adjusting for 50 day-one covariates, the causal-forest AIPW estimate was +3.5 percentage points for 30-day mortality (95% CI 1.0 to 6.1), compared with a raw difference of 7.4 points.</p>
         </header>
         <figure class="p-fig panel">
           <p class="panel-title">Effect on 30-day mortality, percentage points</p>
@@ -394,7 +394,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
           <p class="p-topic">Causal inference</p>
           <h3>Smoking cessation and weight gain</h3>
           <p class="p-what">How much weight do smokers gain because they quit? A causal ML pipeline on the NHEFS cohort, checked against the published estimate by Hernán and Robins.</p>
-          <p class="p-result">Quitting causes 3.38 kg of additional weight gain over 11 years (95% CI 2.46 to 4.30). The effect passes 5 of 5 robustness checks.</p>
+          <p class="p-result">The estimated effect of quitting was 3.38 kg of additional weight gain over 11 years (95% CI 2.46 to 4.30). The estimate remained robust across all five reported robustness checks.</p>
         </header>
         <figure class="p-fig panel">
           <p class="panel-title">Effect on weight change 1971 to 1982, kg</p>
@@ -476,16 +476,15 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
       <div class="sec-head"><h2>About</h2></div>
       <div class="two">
         <div>
-          <p>What draws me to data science is its ability to uncover patterns in data and turn them into insights that support real decisions. I build machine learning pipelines and experiment with deep learning architectures, focusing on rigorous evaluation, understanding model behaviour, and identifying what the results actually tell us.</p>
-          <p>My background combines engineering, automation, and applied data science. I trained as a design engineer (Konstrukteur) at Ferag AG, later worked in junior project management at Belimo Automation, and completed my BSc in Digital Engineering at HSLU in 2025.</p>
-          <p>I am currently pursuing a part-time MSc in Engineering with a focus on Data Science at HSLU, deepening my knowledge of machine learning, statistical methods, and deep learning.</p>
+          <p>My background combines engineering, automation, and independent data science projects. I trained as a design engineer (Konstrukteur) at Ferag AG and later worked in junior project management at Belimo Automation. I completed my BSc in Digital Engineering at HSLU in 2025.</p>
+          <p>I am currently pursuing a part-time MSc in Engineering with a focus on Data Science at HSLU, building on my engineering background through projects in machine learning, causal inference, and deep learning.</p>
         </div>
         <dl class="facts">
           <dt>Education</dt>
-          <dd>MSc in Engineering, Data Science<span>HSLU, 2026 to 2029, part-time</span></dd>
-          <dd>BSc Digital Engineering<span>HSLU, 2025</span></dd>
+          <dd>MSE in Data Science, HSLU · 2026–2029 (expected) · part-time</dd>
+          <dd>BSc in Digital Engineering, HSLU · 2023-2025 · part-time</dd>
           <dt>Languages</dt>
-          <dd>German and Tamil (native)<span>English (fluent), French (A2/B1)</span></dd>
+          <dd>German and Tamil (native) · English (fluent) · French (A2–B1)</dd>
         </dl>
       </div>
     </div>
@@ -495,8 +494,8 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
     <div class="wrap">
       <div class="sec-head"><h2>Skills</h2><p>Tools I have used in the projects above or at work.</p></div>
       <dl class="stack">
-        <div><dt>Causal inference</dt><dd>Causal forests, IPW, AIPW, overlap weights, sensitivity analysis, EconML, causallib</dd></div>
         <div><dt>Machine learning</dt><dd>scikit-learn, XGBoost, SARIMAX, Optuna, SHAP</dd></div>
+        <div><dt>Causal inference</dt><dd>Causal forests, IPW, AIPW, overlap weights, sensitivity analysis, EconML, causallib</dd></div>
         <div><dt>Deep learning</dt><dd>PyTorch, CNNs, attention, Transformers, transfer learning</dd></div>
       </dl>
     </div>
