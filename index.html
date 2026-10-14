@@ -95,6 +95,7 @@ a { color: inherit; }
   letter-spacing: -.025em;
 }
 .hero h1 span { display: block; }
+.hero h1 span + span { color: var(--accent); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 56px; align-items: stretch; }
 .hero-text { display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
 .lede { font-size: 1.32rem; line-height: 1.48; margin: 0 0 28px; max-width: 30ch; }
@@ -130,6 +131,7 @@ a { color: inherit; }
 
 /* ------------------------------------------------ sections */
 section { border-top: 1px solid var(--rule); padding: 72px 0; }
+.band { background: var(--hero); }
 .top + main section:first-child, main > section:first-child { border-top: 0; }
 .sec-head { max-width: 62ch; margin-bottom: 8px; }
 .sec-head h2 {
@@ -470,7 +472,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="band">
     <div class="wrap">
       <div class="sec-head"><h2>About</h2></div>
       <div class="two">
@@ -489,7 +491,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="band">
     <div class="wrap">
       <div class="sec-head"><h2>Skills</h2><p>Tools I have used in the projects above or at work.</p></div>
       <dl class="stack">
@@ -502,7 +504,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="band">
     <div class="wrap">
       <div class="sec-head"><h2>Contact</h2><p>The code for every project on this page is on GitHub.</p></div>
       <div class="contact-links">
@@ -516,7 +518,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
   </section>
 </main>
 
-<footer class="site-foot">
+<footer class="site-foot band">
   <div class="wrap">Jananthan Uthayakumar, 2026</div>
 </footer>
 
